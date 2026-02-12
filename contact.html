@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact - Rupal Express Inc.</title>
+
+<style>
+:root{
+  --red:#c40000;
+  --black:#111;
+  --gray:#f4f4f4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  border-bottom:1px solid #ddd;
+}
+
+.top-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 40px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  height:60px;
+}
+
+.logo h1{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:var(--red);
+}
+
+.top-actions{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-weight:bold;
+}
+
+.top-actions a{
+  text-decoration:none;
+  color:#000;
+}
+
+.quote-btn{
+  background:var(--red);
+  color:#fff !important;
+  padding:10px 18px;
+  border-radius:5px;
+}
+
+/* NAV */
+nav{
+  background:var(--black);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:14px 0;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--red);
+}
+
+/* HERO */
+.page-hero{
+  padding:80px 20px;
+  text-align:center;
+  color:#fff;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/hero-truck.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.page-hero h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+/* CONTENT */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+.card{
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:28px;
+  background:#fff;
+}
+
+.card h3{
+  color:var(--red);
+  margin-bottom:14px;
+  font-size:22px;
+}
+
+.contact-line{
+  margin:10px 0;
+  line-height:1.7;
+}
+
+.contact-line a{
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.small{
+  color:#555;
+  margin-top:6px;
+  line-height:1.6;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-bottom:14px;
+}
+
+label{
+  display:block;
+  font-size:14px;
+  margin-bottom:6px;
+  color:#333;
+  font-weight:bold;
+}
+
+input, textarea, select{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  outline:none;
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--red);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.btn:hover{
+  opacity:.92;
+}
+
+.map{
+  width:100%;
+  height:360px;
+  border:0;
+  border-radius:10px;
+}
+
+.note{
+  margin-top:12px;
+  font-size:13px;
+  color:#666;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#ccc;
+  text-align:center;
+  padding:35px;
+}
+
+footer a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .top-bar{
+    flex-direction:column;
+    gap:10px;
+  }
+  .page-hero h2{
+    font-size:32px;
+  }
+  .grid{
+    grid-template-columns:1fr;
+  }
+  .form-row{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rupal Express Logo">
+      <h1>RUPAL <span>EXPRESS INC.</span></h1>
+    </div>
+
+    <div class="top-actions">
+      <a href="tel:+15597209117">📞 +1 (559) 720-9117</a>
+      <a href="mailto:business@rupalexpress.com">✉ business@rupalexpress.com</a>
+      <a class="quote-btn" href="mailto:business@rupalexpress.com?subject=Quote Request">Get A Quote</a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h2>Contact Us</h2>
+  <p>Get a quote, ask a question, or connect with our team.</p>
+</section>
+
+<section class="container">
+  <div class="grid">
+
+    <!-- LEFT: CONTACT INFO + MAP -->
+    <div class="card">
+      <h3>Rupal Express Inc.</h3>
+
+      <div class="contact-line">
+        📍 <strong>Location:</strong> Kerman, CA
+      </div>
+
+      <div class="contact-line">
+        📞 <strong>Phone:</strong>
+        <a href="tel:+15597209117">+1 (559) 720-9117</a>
+      </div>
+
+      <div class="contact-line">
+        ✉ <strong>Email:</strong>
+        <a href="mailto:business@rupalexpress.com">business@rupalexpress.com</a>
+      </div>
+
+      <div class="small">
+        For quotes, please include: pickup & delivery city/state, date, weight, and commodity.
+      </div>
+
+      <div style="margin-top:18px;">
+        <iframe
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Kerman%2C%20CA&output=embed">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT: CONTACT FORM (MAILTO) -->
+    <div class="card">
+      <h3>Send Us a Message</h3>
+
+      <form id="contactForm">
+        <div class="form-row">
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(559) 000-0000" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" required />
+          </div>
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="Quote Request">Quote Request</option>
+              <option value="Dispatch / Operations">Dispatch / Operations</option>
+              <option value="Careers / Hiring">Careers / Hiring</option>
+              <option value="General Question">General Question</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom:14px;">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+
+        <div class="note">
+          Note: This form opens your email app to send the message (no backend server needed).
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <strong>Rupal Express Inc.</strong>
+  <p>Kerman, CA</p>
+  <p>
+    📞 <a href="tel:+15597209117">+1 (559) 720-9117</a> |
+    ✉ <a href="mailto:business@rupalexpress.com">business@rupalexpress.com</a>
+  </p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+/* Mailto form handler (no backend needed) */
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const topic = document.getElementById("topic").value;
+  const message = document.getElementById("message").value.trim();
+
+  const subject = encodeURIComponent(topic + " - Website Contact");
+  const body = encodeURIComponent(
+    "Name: " + name + "\n" +
+    "Phone: " + (phone || "N/A") + "\n" +
+    "Email: " + email + "\n\n" +
+    "Message:\n" + message
+  );
+
+  window.location.href = "mailto:business@rupalexpress.com?subject=" + subject + "&body=" + body;
+});
+</script>
+
+</body>
+</html>

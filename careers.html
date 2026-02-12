@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Careers - Rupal Express Inc.</title>
+
+<style>
+:root{
+  --red:#c40000;
+  --black:#111;
+  --gray:#f4f4f4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  border-bottom:1px solid #ddd;
+}
+
+.top-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 40px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  height:60px;
+}
+
+.logo h1{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:var(--red);
+}
+
+.top-actions{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-weight:bold;
+}
+
+.top-actions a{
+  text-decoration:none;
+  color:#000;
+}
+
+.quote-btn{
+  background:var(--red);
+  color:#fff !important;
+  padding:10px 18px;
+  border-radius:5px;
+}
+
+/* NAV */
+nav{
+  background:var(--black);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:14px 0;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--red);
+}
+
+/* HERO */
+.page-hero{
+  padding:80px 20px;
+  text-align:center;
+  color:#fff;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/hero-truck.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.page-hero h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+/* CONTENT */
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+
+.section{
+  margin-bottom:50px;
+}
+
+.section h3{
+  color:var(--red);
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+.section p{
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+ul{
+  margin-left:20px;
+  line-height:1.8;
+}
+
+/* BENEFITS GRID */
+.benefits{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+
+.benefit-card{
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:20px;
+  text-align:center;
+  background:#fff;
+}
+
+/* CTA */
+.cta{
+  background:var(--red);
+  color:#fff;
+  text-align:center;
+  padding:50px 20px;
+  border-radius:10px;
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:20px;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#ccc;
+  text-align:center;
+  padding:35px;
+}
+
+footer a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .top-bar{
+    flex-direction:column;
+    gap:10px;
+  }
+  .page-hero h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rupal Express Logo">
+      <h1>RUPAL <span>EXPRESS INC.</span></h1>
+    </div>
+
+    <div class="top-actions">
+      <a href="tel:+15597209117">📞 +1 (559) 720-9117</a>
+      <a href="mailto:business@rupalexpress.com">✉ business@rupalexpress.com</a>
+      <a class="quote-btn" href="mailto:business@rupalexpress.com?subject=Quote Request">Get A Quote</a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h2>Drive With Rupal Express</h2>
+  <p>Professional drivers. Reliable equipment. Respect & steady miles.</p>
+</section>
+
+<section class="container">
+
+  <div class="section">
+    <h3>Now Hiring CDL Class A Drivers</h3>
+    <p>
+      Rupal Express Inc. is looking for experienced and safety-focused CDL drivers
+      to join our growing fleet. We value professionalism, communication, and on-time performance.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>Driver Requirements</h3>
+    <ul>
+      <li>Valid CDL Class A License</li>
+      <li>Minimum 2 years OTR experience preferred</li>
+      <li>Clean driving record</li>
+      <li>Ability to pass DOT drug screening</li>
+      <li>Professional attitude and strong work ethic</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Why Join Us?</h3>
+    <div class="benefits">
+      <div class="benefit-card">
+        <strong>Competitive Pay</strong>
+        <p>Weekly direct deposit with consistent miles.</p>
+      </div>
+      <div class="benefit-card">
+        <strong>Reliable Equipment</strong>
+        <p>Well-maintained trucks and trailers.</p>
+      </div>
+      <div class="benefit-card">
+        <strong>24/7 Support</strong>
+        <p>Professional dispatch and driver support team.</p>
+      </div>
+      <div class="benefit-card">
+        <strong>Respect & Stability</strong>
+        <p>We treat drivers like partners, not numbers.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Ready to Join Our Team?</h2>
+    <p>Email your CDL details and driving history to apply.</p>
+    <a href="mailto:business@rupalexpress.com?subject=Driver Application">Apply Now</a>
+  </div>
+
+</section>
+
+<footer>
+  <strong>Rupal Express Inc.</strong>
+  <p>Kerman, CA</p>
+  <p>
+    📞 <a href="tel:+15597209117">+1 (559) 720-9117</a> |
+    ✉ <a href="mailto:business@rupalexpress.com">business@rupalexpress.com</a>
+  </p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

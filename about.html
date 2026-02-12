@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us - Rupal Express Inc.</title>
+
+<style>
+:root{--red:#c40000;--black:#111;--gray:#f4f4f4;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+body{background:#fff;color:#222;}
+header{border-bottom:1px solid #ddd;}
+.top-bar{display:flex;align-items:center;justify-content:space-between;padding:15px 40px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo img{height:60px;}
+.logo h1{font-size:24px;font-weight:bold;}
+.logo span{color:var(--red);}
+.top-actions{display:flex;align-items:center;gap:18px;font-weight:bold;}
+.top-actions a{text-decoration:none;color:#000;}
+.quote-btn{background:var(--red);color:#fff !important;padding:10px 18px;border-radius:5px;}
+nav{background:var(--black);}
+nav ul{list-style:none;display:flex;justify-content:center;gap:40px;padding:14px 0;}
+nav a{color:#fff;text-decoration:none;font-weight:bold;}
+nav a:hover{color:var(--red);}
+
+.page-hero{
+  padding:70px 20px;
+  background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url("images/hero-truck.jpg");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+}
+.page-hero h2{font-size:40px;margin-bottom:10px;}
+.page-hero p{font-size:18px;opacity:.95;}
+
+.container{max-width:1100px;margin:0 auto;padding:50px 20px;}
+.card{
+  border:1px solid #ddd;border-radius:10px;padding:25px;background:#fff;
+}
+.grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;
+}
+.grid img{width:100%;border-radius:10px;}
+
+.section-title{font-size:28px;margin-bottom:12px;}
+.text{line-height:1.7;color:#333;margin-bottom:14px;}
+.bullets{margin-left:18px;line-height:1.8;color:#333;}
+.badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;}
+.badge{border:1px solid #ddd;padding:10px 14px;border-radius:999px;}
+.cta{
+  margin-top:35px;
+  background:var(--red);color:#fff;text-align:center;
+  padding:28px;border-radius:12px;
+}
+.cta a{
+  display:inline-block;margin-top:14px;
+  background:#000;color:#fff;text-decoration:none;
+  padding:12px 22px;border-radius:8px;font-weight:bold;
+}
+footer{background:#111;color:#ccc;text-align:center;padding:35px;}
+footer a{color:#ccc;text-decoration:none;}
+
+@media(max-width:900px){
+  .top-bar{flex-direction:column;gap:10px;}
+  .grid{grid-template-columns:1fr;}
+  .page-hero h2{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rupal Express Logo" />
+      <h1>RUPAL <span>EXPRESS INC.</span></h1>
+    </div>
+
+    <div class="top-actions">
+      <a href="tel:+15597209117">📞 +1 (559) 720-9117</a>
+      <a href="mailto:business@rupalexpress.com">✉ business@rupalexpress.com</a>
+      <a class="quote-btn" href="mailto:business@rupalexpress.com?subject=Quote%20Request">Get A Quote</a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h2>About Rupal Express Inc.</h2>
+  <p>Reliable trucking. Professional drivers. On-time delivery.</p>
+</section>
+
+<!-- PAGE CONTENT -->
+<main class="container">
+  <div class="grid">
+    <div class="card">
+      <h3 class="section-title">Who We Are</h3>
+      <p class="text">
+        Rupal Express Inc. is a Kerman, CA based trucking company focused on safe, dependable,
+        and efficient freight transportation across major U.S. routes.
+      </p>
+      <p class="text">
+        We operate with a customer-first mindset, clear communication, and high standards for
+        safety, compliance, and service.
+      </p>
+
+      <h3 class="section-title" style="margin-top:18px;">What We Deliver</h3>
+      <ul class="bullets">
+        <li>On-time pickup and delivery</li>
+        <li>Professional dispatch + 24/7 support</li>
+        <li>Clean equipment and reliable operations</li>
+        <li>Safety-first driving and compliance</li>
+      </ul>
+
+      <div class="badges">
+        <div class="badge">✅ Safety & Compliance</div>
+        <div class="badge">✅ Customer Focus</div>
+        <div class="badge">✅ Reliable Capacity</div>
+      </div>
+
+      <div class="cta">
+        <div style="font-size:20px;font-weight:bold;">Need reliable capacity?</div>
+        <div style="margin-top:8px;">Email us your lane + pickup date and we’ll respond quickly.</div>
+        <a href="mailto:business@rupalexpress.com?subject=Freight%20Quote%20Request">Request a Quote</a>
+      </div>
+    </div>
+
+    <img src="images/fleet.jpg" alt="Rupal Express Fleet" />
+  </div>
+</main>
+
+<footer>
+  <strong>Rupal Express Inc.</strong>
+  <p>Kerman, CA</p>
+  <p>
+    📞 <a href="tel:+15597209117">+1 (559) 720-9117</a> |
+    ✉ <a href="mailto:business@rupalexpress.com">business@rupalexpress.com</a>
+  </p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

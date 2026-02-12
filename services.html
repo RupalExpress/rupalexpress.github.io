@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services - Rupal Express Inc.</title>
+
+<style>
+:root{
+  --red:#c40000;
+  --black:#111;
+  --gray:#f4f4f4;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  border-bottom:1px solid #ddd;
+}
+
+.top-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 40px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  height:60px;
+}
+
+.logo h1{
+  font-size:24px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:var(--red);
+}
+
+.top-actions{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-weight:bold;
+}
+
+.top-actions a{
+  text-decoration:none;
+  color:#000;
+}
+
+.quote-btn{
+  background:var(--red);
+  color:#fff !important;
+  padding:10px 18px;
+  border-radius:5px;
+}
+
+/* NAV */
+nav{
+  background:var(--black);
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:14px 0;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--red);
+}
+
+/* PAGE HERO */
+.page-hero{
+  padding:80px 20px;
+  text-align:center;
+  color:#fff;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("images/hero-truck.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+.page-hero h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+/* SERVICES SECTION */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:30px;
+}
+
+.service-card{
+  border:1px solid #ddd;
+  border-radius:10px;
+  padding:30px;
+  background:#fff;
+  transition:0.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service-card h3{
+  color:var(--red);
+  margin-bottom:12px;
+}
+
+.service-card p{
+  line-height:1.6;
+}
+
+/* CTA */
+.cta{
+  margin-top:70px;
+  background:var(--red);
+  color:#fff;
+  text-align:center;
+  padding:50px 20px;
+  border-radius:10px;
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:18px;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#ccc;
+  text-align:center;
+  padding:35px;
+}
+
+footer a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .top-bar{
+    flex-direction:column;
+    gap:10px;
+  }
+  .page-hero h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Rupal Express Logo">
+      <h1>RUPAL <span>EXPRESS INC.</span></h1>
+    </div>
+
+    <div class="top-actions">
+      <a href="tel:+15597209117">📞 +1 (559) 720-9117</a>
+      <a href="mailto:business@rupalexpress.com">✉ business@rupalexpress.com</a>
+      <a class="quote-btn" href="mailto:business@rupalexpress.com?subject=Quote Request">Get A Quote</a>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h2>Our Transportation Services</h2>
+  <p>Reliable capacity. Professional drivers. Nationwide coverage.</p>
+</section>
+
+<section class="container">
+  <div class="services-grid">
+
+    <div class="service-card">
+      <h3>Full Truckload (FTL)</h3>
+      <p>
+        Dedicated truck capacity for large shipments. Direct point-to-point 
+        delivery with secure handling and on-time performance.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Refrigerated (Reefer)</h3>
+      <p>
+        Temperature-controlled transportation for produce, food, and 
+        sensitive freight. Monitored equipment for consistent protection.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Dry Van</h3>
+      <p>
+        Safe and cost-effective dry freight transportation for retail, 
+        general goods, and palletized shipments.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Regional & OTR</h3>
+      <p>
+        Flexible regional and over-the-road solutions to keep your supply 
+        chain moving across major U.S. corridors.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Expedited Freight</h3>
+      <p>
+        Time-sensitive shipments delivered quickly with priority handling 
+        and real-time communication.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Dedicated Lanes</h3>
+      <p>
+        Consistent equipment and drivers assigned to your freight lanes for 
+        long-term reliability and performance.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="cta">
+    <h2>Need Reliable Capacity?</h2>
+    <p>Send us your lane, pickup date, and weight details.</p>
+    <a href="mailto:business@rupalexpress.com?subject=Freight Quote Request">Request a Quote</a>
+  </div>
+
+</section>
+
+<footer>
+  <strong>Rupal Express Inc.</strong>
+  <p>Kerman, CA</p>
+  <p>
+    📞 <a href="tel:+15597209117">+1 (559) 720-9117</a> |
+    ✉ <a href="mailto:business@rupalexpress.com">business@rupalexpress.com</a>
+  </p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
